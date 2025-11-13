@@ -1,0 +1,95 @@
+/* Colourful student-style theme */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom right, #ffecd2, #fcb69f);
+  margin: 0;
+  color: #222;
+}
+
+header {
+  background: #ff7eb3;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  background: #ffb6c1;
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+nav a:hover {
+  background: #ff69b4;
+}
+
+.box {
+  background: white;
+  border-radius: 15px;
+  margin: 20px auto;
+  padding: 20px;
+  width: 90%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+button {
+  background: #00bcd4;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background: #0097a7;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+.product {
+  background: #e1f5fe;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+.product img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+.msg {
+  color: red;
+  font-size: 14px;
+}
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #ff7eb3;
+  color: white;
+}

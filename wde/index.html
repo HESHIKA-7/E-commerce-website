@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌈 E-Kart – Student E-Commerce Portal</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#about">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="box">
+    <h2>Welcome to E-Kart!</h2>
+    <p>Discover colourful products, easy login, reviews, and support — all in a simple student project version!</p>
+    <button id="openLogin">Login / Register</button>
+  </section>
+
+  <section id="products" class="box">
+    <h2>Our Products</h2>
+    <div id="productList" class="grid"></div>
+  </section>
+
+  <section id="orders" class="box">
+    <h2>My Orders</h2>
+    <div id="orderList"></div>
+  </section>
+
+  <section id="wishlist" class="box">
+    <h2>My Wishlist 💖</h2>
+    <div id="wishList"></div>
+  </section>
+
+  <section id="reviews" class="box">
+    <h2>Comments & Reviews ✨</h2>
+    <form id="reviewForm">
+      <input type="text" id="reviewName" placeholder="Your Name">
+      <textarea id="reviewText" placeholder="Write your comment..."></textarea>
+      <button type="submit">Post Review</button>
+    </form>
+    <div id="reviewList"></div>
+  </section>
+
+  <section id="support" class="box">
+    <h2>Customer Care 💬</h2>
+    <form id="supportForm">
+      <select id="issueType">
+        <option>Order Issue</option>
+        <option>Payment Problem</option>
+        <option>Product Damaged</option>
+        <option>Other</option>
+      </select>
+      <textarea id="issueMsg" placeholder="Describe your problem..."></textarea>
+      <button type="submit">Submit Ticket</button>
+    </form>
+    <div id="ticketList"></div>
+  </section>
+
+  <section id="about" class="box">
+    <h2>About Us 🌟</h2>
+    <p>This project was developed by a Computer Science student for a college assignment. It demonstrates HTML, CSS, and JS frontend concepts!</p>
+  </section>
+
+  <footer>
+    <p>© 2025 E-Kart | Made with ❤️ by Students</p>
+  </footer>
+
+  <!-- Login/Register Modal -->
+  <div class="modal" id="loginModal">
+    <div class="modal-content">
+      <h2 id="modalTitle">Login</h2>
+      <form id="authForm">
+        <input type="text" id="authName" placeholder="Full Name (for register)">
+        <input type="email" id="authEmail" placeholder="Email">
+        <input type="password" id="authPass" placeholder="Password (min 6 chars)">
+        <p id="authMsg" class="msg"></p>
+        <button type="submit" id="authBtn">Login</button>
+        <button type="button" id="switchMode">Switch to Register</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
